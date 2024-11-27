@@ -59,21 +59,18 @@ docker compose up
 
 ![image](https://github.com/user-attachments/assets/63f2f8fa-d848-42c3-8221-44bdddd50544)
 
-![image](https://github.com/user-attachments/assets/b933c24c-3bc4-4ea5-a49a-9a03fa6e8b4f)
-
-
 
 ## Reports do Allure
 
 Comando para gerar reports:
 
 ```bash
-"allure serve allure-results"
+allure serve allure-results
 ```
 Ou também:
 
 ```bash
-"allure open ./allure-report"
+allure open ./allure-report
 ```
 
 ![image](https://github.com/user-attachments/assets/6df64e8e-d5e5-42da-9d0d-b124ab7a8437)
