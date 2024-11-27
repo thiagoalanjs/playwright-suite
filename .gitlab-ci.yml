@@ -1,0 +1,18 @@
+image: mcr.microsoft.com/playwright:v1.49.0-noble
+
+stages:
+  - test
+
+playwright_tests:
+  stage: test
+  script:
+    - npm install --force
+    - npx playwright install --with-deps
+    - npx playwright test
+  artifacts:
+    when: always
+    paths:
+      - playwright-report/**
+  cache:
+    paths:
+      - node_modules/

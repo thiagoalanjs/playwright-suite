@@ -90,7 +90,7 @@ export class MenuNavigationPage {
     async loginUserNotExist(){
         const email = faker.internet.email()
         await this.fieldLoginUsername.fill(email)
-        await this.fieldLoginPassword.fill(process.env.PASSWORD)
+        await this.fieldLoginPassword.fill('teste123qweasd')
     }
 
     async invalidLogin(){
@@ -100,4 +100,4 @@ export class MenuNavigationPage {
 
 }
 
-module.exports = { MenuNavigationPage };
+module.exports = { MenuNavigationPage }
