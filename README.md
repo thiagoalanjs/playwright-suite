@@ -25,10 +25,22 @@ npm install - Instalação de todas as dependências do arquivo package.json
 
 ## Rodando os testes
 
+Executa todos os testes para todos o navegadores configurados no arquivo playwright.config.ts:
+
 ```bash
-"npx playwright test" - Executa todos os testes para todos o navegadores configurados no arquivo playwright.config.ts
-"npx playwright test --ui" - Executa os testes no modo gráfico para debug onde você poderá acompanhar com interface gráfica.
-"npx playwright test --project=chromium" - Executa todos os testes somente no chromium
+npx playwright test
+```
+
+Executa os testes no modo gráfico para debug onde você poderá acompanhar com interface gráfica:
+
+```bash
+npx playwright test --ui 
+```
+
+Executa todos os testes somente em um navegador, exemplo do chromium:
+
+```bash
+"npx playwright test --project=chromium" 
 ```
 ## Rodando com o Docker
 ```
