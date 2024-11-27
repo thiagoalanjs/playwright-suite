@@ -19,8 +19,11 @@ Docker - https://docs.docker.com/engine/install/
 Allure Reports - https://allurereport.org/
 
 ## Configurando o comando 
+
+Instalação de todas as dependências do arquivo package.json:
+
 ```bash
-npm install - Instalação de todas as dependências do arquivo package.json
+npm install 
 ```
 
 ## Rodando os testes
