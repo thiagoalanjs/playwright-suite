@@ -40,15 +40,23 @@ npx playwright test --ui
 Executa todos os testes somente em um navegador, exemplo do chromium:
 
 ```bash
-"npx playwright test --project=chromium" 
+npx playwright test --project=chromium
+ 
 ```
 ## Rodando com o Docker
-```
-"docker build -t playwright-demoblazer" - Criando a imagem docker conforme o arquivo Dockerfile
-"docker compose up" - Inicializa o contêiner para executar os testes
 
+Criando a imagem docker conforme o arquivo Dockerfile:
 
+```bash
+docker build -t playwright-demoblazer
 ```
+
+Inicializa o contêiner para executar os testes:
+
+```bash
+docker compose up
+```
+
 ![image](https://github.com/user-attachments/assets/63f2f8fa-d848-42c3-8221-44bdddd50544)
 
 ![image](https://github.com/user-attachments/assets/b933c24c-3bc4-4ea5-a49a-9a03fa6e8b4f)
@@ -59,7 +67,14 @@ Executa todos os testes somente em um navegador, exemplo do chromium:
 
 Comando para gerar reports:
 
-"allure serve allure-results" ou também "allure open ./allure-report"
+```bash
+"allure serve allure-results"
+```
+Ou também:
+
+```bash
+"allure open ./allure-report"
+```
 
 ![image](https://github.com/user-attachments/assets/6df64e8e-d5e5-42da-9d0d-b124ab7a8437)
 
