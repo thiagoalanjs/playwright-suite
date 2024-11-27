@@ -20,9 +20,7 @@ Allure Reports - https://allurereport.org/
 
 ## Configurando o comando 
 ```bash
-Para MAC/Linux   System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-
-Para Windows   System.setProperty("webdriver.chrome.driver", "C://<PATH DO CHROMEDRIVER NA SUA MÁQUINA>");
+npm install - Instalação de todas as dependências do arquivo package.json
 ```
 
 ## Rodando os testes
@@ -35,7 +33,7 @@ Para Windows   System.setProperty("webdriver.chrome.driver", "C://<PATH DO CHROM
 ## Rodando com o Docker
 ```
 "docker build -t playwright-demoblazer" - Criando a imagem docker conforme o arquivo Dockerfile
-"docker compose up playwright-demoblazer" - Inicializa o contêiner para executar os testes
+"docker compose up" - Inicializa o contêiner para executar os testes
 
 
 ```
