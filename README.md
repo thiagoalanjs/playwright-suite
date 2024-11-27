@@ -5,20 +5,16 @@
 
 # Automação de testes com Playwright e Typescript
 
-Esse projeto é um exemplo de teste automatizado com Playwrigh/Typescript integrado com reports do Allure.
+Esse projeto é um exemplo de teste automatizado com o framework Playwright escrito em Typescript e integrado com reports do Allure.
 
 Site usado para os testes - https://www.demoblaze.com/
 
 ## Instalação & Configuração
 
 
-Java - https://www.oracle.com/br/java/technologies/downloads/
+Playwright - https://playwright.dev/docs/intro
 
-Maven - https://maven.apache.org/install.html
-
-Junit5 - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-
-IDE - Intellij - https://www.jetbrains.com/help/idea/installation-guide.html
+Docker - https://docs.docker.com/engine/install/
 
 Allure Reports - https://allurereport.org/
 
@@ -43,13 +39,11 @@ Para Windows   System.setProperty("webdriver.chrome.driver", "C://<PATH DO CHROM
 
 Comando para gerar reports:
 
-"allure serve allure-results target/allure-results/" 
+"allure serve allure-results" ou também "allure open ./allure-report"
 
-![image](https://github.com/user-attachments/assets/e3d34349-d07f-4e6f-9f69-9c03063a588b)
+![image](https://github.com/user-attachments/assets/6df64e8e-d5e5-42da-9d0d-b124ab7a8437)
 
+![image](https://github.com/user-attachments/assets/558de6e7-c6d0-4807-8ddf-e5c3d2a5516f)
 
-![image](https://github.com/user-attachments/assets/65601414-ba03-4410-910c-4775aeb18985)
-
-
-![image](https://github.com/user-attachments/assets/4dfe7594-d986-47dd-b77d-48be58375469)
+![image](https://github.com/user-attachments/assets/16fe0ec4-1332-4ab6-bf5f-f6b45f289df4)
 
