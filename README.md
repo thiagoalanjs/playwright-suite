@@ -25,15 +25,25 @@ Para MAC/Linux   System.setProperty("webdriver.chrome.driver", "/usr/local/bin/c
 Para Windows   System.setProperty("webdriver.chrome.driver", "C://<PATH DO CHROMEDRIVER NA SUA MÁQUINA>");
 ```
 
-## Comando mvn
+## Rodando os testes
 
 ```bash
-"mvn clean install" - Instalação das dependências
-"mvn clean test" -  Roda todos os testes que estão no pacote Tests
-"mvn clean test -DfailIfNoTests=false  -Dtest=Tests.loginUserTest" - Roda somente um arquivo nesse exemplo 'loginUserTest'
+"npx playwright test" - Executa todos os testes para todos o navegadores configurados no arquivo playwright.config.ts
+"npx playwright test --ui" - Executa os testes no modo gráfico para debug onde você poderá acompanhar com interface gráfica.
+"npx playwright test --project=chromium" - Executa todos os testes somente no chromium
 ```
+## Rodando com o Docker
+```
+"docker build -t playwright-demoblazer" - Criando a imagem docker conforme o arquivo Dockerfile
+"docker compose up playwright-demoblazer" - Inicializa o contêiner para executar os testes
 
-![image](https://github.com/user-attachments/assets/0f7fc1f2-d081-4b90-af0b-574a2341b2d0)
+
+```
+![image](https://github.com/user-attachments/assets/63f2f8fa-d848-42c3-8221-44bdddd50544)
+
+![image](https://github.com/user-attachments/assets/b933c24c-3bc4-4ea5-a49a-9a03fa6e8b4f)
+
+
 
 ## Reports do Allure
 
